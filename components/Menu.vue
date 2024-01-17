@@ -18,7 +18,7 @@ const menu = [
     {name: "FAQ", slug: "faq"},
     {name: "Tickets", slug: "tickets"},
 ]
-
+ 
 const isOpen = ref(false);
 
 //get current route
