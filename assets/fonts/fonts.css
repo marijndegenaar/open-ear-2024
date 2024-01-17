@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'NewEdge';
+    src: url('NewEdge666-RegularRounded.otf') format('opentype');
+    font-weight: normal;
+}
+
+html, body{
+    /* font-family: 'NewEdge', sans-serif; */
+    font-family: 'NewEdge', sans-serif;
+}
+

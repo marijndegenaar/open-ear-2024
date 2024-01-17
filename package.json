@@ -1,0 +1,34 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@hypernym/nuxt-anime": "^2.1.0",
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/i18n": "^8.0.0-beta.13",
+    "@types/node": "^18.16.19",
+    "@vue/language-plugin-pug": "^1.8.6",
+    "nuxt": "^3.8.2"
+  },
+  "dependencies": {
+    "@formkit/auto-animate": "^0.8.1",
+    "@liripeng/vue-audio-player": "^1.5.3",
+    "@nuxtjs/prismic": "^3.0.1",
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@prismicio/richtext": "^2.1.5",
+    "@volar/vue-language-plugin-pug": "^1.6.5",
+    "@yeger/vue-masonry-wall": "^5.0.4",
+    "lodash-es": "^4.17.21",
+    "sass": "^1.63.6",
+    "vite-plugin-pug": "^0.3.2",
+    "vue-howler": "^0.7.0",
+    "vue-scrollto": "^2.20.0",
+    "vue3-touch-events": "^4.1.8"
+  }
+}
