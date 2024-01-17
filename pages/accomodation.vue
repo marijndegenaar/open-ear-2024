@@ -1,16 +1,16 @@
 <template lang="pug">
-  #accomodation.w-full.flex.flex-wrap.bg-gradient-to-t.from-white.to-green
-    header.w-full.flex.justify-end.p-20
-      img.w-2x5(src="~/assets/images/accom.svg" alt="Accomodation")
+  #accomodation.w-full.flex.flex-wrap.bg-gradient-to-t.from-white.to-green.p-4
+    .w-full.flex.justify-end.p-12.lg_p-20
+      img.w-full.md_w-1x3.lg_w-2x5(src="~/assets/images/accom.svg" alt="Accomodation")
 
-    MasonryWall(:items='infoData' :ssr-columns='1' :gap='16').w-full.p-4
+    MasonryWall(:items='infoData' :ssr-columns='1' :gap='16').w-full
       template(#default='{ item, index }')
         .info-item( @click="toggleOpen(item)")
-          .inner.p-2.bg-gradient-to-t.from-green.to-white.rounded-xxl.p-4
+          .inner.bg-gradient-to-t.from-green.to-white.rounded-xxl.p-4.hover_pb-6.cursor-pointer.transition-all
             h2.text-purple {{ item.title }}
             header(v-auto-animate).text-purple
               PrismicRichText.content(:field="item.entry_content" v-if="item.isOpen").pt-2    
-    PrismicImage.w-full(:field="accomData.map").m-4.rounded-xxl
+    PrismicImage.w-full(:field="accomData.map").rounded-xxl.mt-8
       
 </template>
 

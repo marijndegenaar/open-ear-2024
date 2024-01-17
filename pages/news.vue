@@ -1,7 +1,7 @@
 <template lang="pug">
 #news-wrap.w-full.bg-gradient-to-t.from-white.to-yellow
   .w-full.flex.justify-end.p-20
-    img.w-3x12(src="~/assets/images/news.svg" alt="News")
+    img.w-full.lg_w-3x12(src="~/assets/images/news.svg" alt="News")
   MasonryWall(:items='newsData' :ssr-columns='1' :gap='8')
     template(#default='{ item, index }')
       .news-item.p-2(@click="toggleOpen(item)")

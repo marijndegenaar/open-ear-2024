@@ -1,11 +1,11 @@
 <template lang="pug">
-#faq-wrap.w-full
-  .w-full.flex.justify-end.p-20
-      img.w-3x12(src="~/assets/images/faq-title.svg" alt="FAQ")
-  MasonryWall(:items='faqData' :ssr-columns='1' :gap='8')
+#faq-wrap.w-full.p-4
+  .w-full.flex.justify-center.lg_justify-end.p-16.lg_p-20
+      img.w-4x5.lg_w-3x12(src="~/assets/images/faq-title.svg" alt="FAQ")
+  MasonryWall(:items='faqData' :ssr-columns='1' :gap='16')
     template(#default='{ item, index }')
-      .faq-item.p-2
-        .inner.p-4.bg-gradient-to-t.from-white.to-orange.text-purple.rounded-xxl(@click="toggleOpen(item)")
+      .faq-item
+        .inner.p-2.bg-gradient-to-t.from-white.to-orange.text-purple.rounded-xxl.hover_pb-6.cursor-pointer.transition-all(@click="toggleOpen(item)")
           header(v-auto-animate)
             h2.p-2.news-title {{ item.question }}
             p.text-l.p-2.news-title(v-if="item.isOpen") {{ item.answer }}
