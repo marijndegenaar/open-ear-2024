@@ -1,7 +1,7 @@
 <template lang="pug">
 #faq-wrap.w-full
   .w-full.flex.justify-end.p-20
-      img.w-3x12(src="~/assets/images/faq.svg" alt="FAQ")
+      img.w-3x12(src="~/assets/images/faq-title.svg" alt="FAQ")
   MasonryWall(:items='faqData' :ssr-columns='1' :gap='8')
     template(#default='{ item, index }')
       .faq-item.p-2
@@ -10,6 +10,7 @@
             h2.p-2.news-title {{ item.question }}
             p.text-l.p-2.news-title(v-if="item.isOpen") {{ item.answer }}
 .background.bg-gradient-to-t.from-white.to-orange
+
 </template>
 
 <script setup>
