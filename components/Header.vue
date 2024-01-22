@@ -19,7 +19,9 @@ const handleScroll = () => {
     logoBig.style.filter = `blur(${blurValue}px)`;
 }
 
-window.addEventListener('scroll', handleScroll);
+if (typeof window !== 'undefined') {
+    window.addEventListener('scroll', handleScroll);
+}
 
 
 
