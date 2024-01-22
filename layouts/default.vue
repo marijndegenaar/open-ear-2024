@@ -1,18 +1,15 @@
 <template lang="pug">
 Menu
+Header
 #layout.default
     slot
-
+Footer
 </template>
 
 <style lang="sass">
-.page-enter-active,
-.page-leave-active 
-  transition: all 0.4s
-
-.page-enter-from,
-.page-leave-to 
-  opacity: 0
-  filter: blur(1rem)
+#__nuxt
+    min-height: 100vh
+    display: flex
+    flex-direction: column
 
 </style>

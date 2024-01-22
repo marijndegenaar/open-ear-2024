@@ -2,7 +2,7 @@
 #menu.fixed.z-20.top-0.right-0.cursor-pointer.w-full
     .pill(@click="isOpen = !isOpen" :class="slug").fixed.top-0.right-0.w-12.h-4.rounded-xl.m-2.hover_bg-green.hover_w-16.transition-all.hidden.md_block.z-30
     .pill(@click="isOpen = !isOpen" :class="slug").fixed.top-0.right-0.w-8.h-8.rounded-2xl.m-2.md_hidden
-    .menu(v-if="isOpen" v-auto-animate).text-center.z-30
+    .menu(v-if="isOpen" v-auto-animate).text-center.z-30.bg-gradient-to-b.from-transparent.to-white.h-full
         nuxt-link.menu-item.w-full.rounded-2xl.p-4.text-normal.hover_p-6.hover_text-xl.transition-all(v-for="item in menu" :key="item.slug" :to="item.slug" @click="isOpen = !isOpen") {{ item.name }}
 
 </template>

@@ -1,10 +1,9 @@
 <template lang="pug">
-  HeaderLogoBG
-  #transport.w-full.flex.flex-wrap.mb-32
+  #transport.w-full.flex.flex-wrap.mb-32.p-2.lg_p-8
     header.w-full.flex.justify-end.p-24.mb-24.lg_mb-0
       img.w-full.lg_w-2x5(src="~/assets/images/transport.svg" alt="transport")
 
-    MasonryWall(:items='infoData' :ssr-columns='1' :gap='16').w-full.p-4
+    MasonryWall(:items='infoData' :ssr-columns='1' :gap='16').w-full
       template(#default='{ item, index }')
         .info-item( @click="toggleOpen(item)")
           .inner.p-2.bg-gradient-to-t.from-transparent.to-pink.rounded-xxl.p-4.hover_pb-6.cursor-pointer.transition-all

@@ -1,5 +1,5 @@
 <template lang="pug">
-HeaderLogoBG
+
 #artists-wrap
 	.w-full.flex.justify-end.p-24.mb-24.lg_mb-8.2xl_mb-16
 		img.w-full.lg_w-1x4.self-end(src="~/assets/images/lineup.svg" alt="Line Up")

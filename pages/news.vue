@@ -1,7 +1,6 @@
 <template lang="pug">
-HeaderLogoBG
-#news-wrap.w-full.bg-gradient-to-t.from-transparent.to-yellow.p-2.lg_p-8.mb-32
-  .w-full.flex.justify-end.p-24.lg_p-20.mb-8
+#news-wrap.w-full.bg-gradient-to-t.from-transparent.to-yellow.p-2.lg_p-8
+  .w-full.flex.justify-end.p-20.lg_p-20.mb-8
     img.w-full.md_w-3x12.lg_w-2x12(src="~/assets/images/news.svg" alt="News")
   MasonryWall(:items='newsData' :ssr-columns='1' :gap='16')
     template(#default='{ item, index }')
