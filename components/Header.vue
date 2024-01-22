@@ -11,9 +11,22 @@ const { client } = usePrismic()
 const { data: homepageData } = await useAsyncData("homepage", () =>
 client.getSingle("homepage")
 );
+
+const handleScroll = () => {
+    const logoBig = document.querySelector('.logo-big');
+    const scrollY = window.scrollY;
+    const blurValue = Math.min(scrollY / 100, 3); // Adjust the division value to control the blur intensity
+    logoBig.style.filter = `blur(${blurValue}px)`;
+}
+
+window.addEventListener('scroll', handleScroll);
+
+
+
 </script>
 
 <style lang="sass" scoped>
-
+.logo-big  
+    z-index: -1
 
 </style>

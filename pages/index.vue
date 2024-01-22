@@ -1,19 +1,19 @@
 <template lang="pug">
   Menu
   #home
-    .logo-big.fixed.top-8.left-8.w-10x12.lg_w-3x12
-      prismic-image(:field="homepageData.data.logo_main")
-    .logo-small.fixed.lg_bottom-8.top-4.left-4.lg_right-8.w-1x4.lg_w-1x12
-      prismic-image(:field="homepageData.data.logo_small")
+    //- .logo-big.fixed.top-8.left-8.w-10x12.lg_w-3x12
+    //-   prismic-image(:field="homepageData.data.logo_main")
+    //- .logo-small.fixed.lg_bottom-8.top-4.left-4.lg_right-8.w-1x4.lg_w-1x12
+    //-   prismic-image(:field="homepageData.data.logo_small")
     
-    .information.fixed.bottom-8.left-8.text-white.text-xl
-      | {{ homepageData.data.information }}
+    //- .information.fixed.bottom-8.left-8.text-white.text-xl
+    //-   | {{ homepageData.data.information }}
     
-    .gradient.bg-gradient-to-t.from-purple.to-transparent
+    //- .gradient.bg-gradient-to-t.from-purple.to-transparent
 
         
-    prismic-image(:field="homepageData.data.bg_desktop").background.hidden.md_block
-    prismic-image(:field="homepageData.data.bg_mobile").background.block.md_hidden
+    //- prismic-image(:field="homepageData.data.bg_desktop").background.hidden.md_block
+    //- prismic-image(:field="homepageData.data.bg_mobile").background.block.md_hidden
 
 
   //- video(autoplay muted loop playsinline).w-full.h-screen.object-cover.hidden.md_block
