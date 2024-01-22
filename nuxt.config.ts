@@ -8,7 +8,7 @@ export default defineNuxtConfig({
         charset: 'utf-8',
         viewport: 'width=device-width, minimal-ui initial-scale=1, user-scalable=no',
         link: [{ rel: 'icon', type: 'image/png', href: '/fav.png' }],
-      }
+      },
   },
   modules: [
       '@nuxtjs/prismic',

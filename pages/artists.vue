@@ -1,27 +1,29 @@
 <template lang="pug">
+HeaderLogoBG
 #artists-wrap
-	.w-full.flex.justify-end.p-20
-		img.w-full.lg_w-1x3.self-end(src="~/assets/images/lineup.svg" alt="Line Up")
-	MasonryWall(:items='artistsData' :ssr-columns='1' :gap='16').p-4
+	.w-full.flex.justify-end.p-24.mb-24.lg_mb-8.2xl_mb-16
+		img.w-full.lg_w-1x4.self-end(src="~/assets/images/lineup.svg" alt="Line Up")
+	MasonryWall(:items='artistsData' :ssr-columns='1' :gap='16').p-2.lg_p-4
 		template(#default='{ item, index }')
-			.artists-item(@click="toggleOpen(item)")
-				.inner.p2.bg-gradient-to-b.from-purple.to-white.text-orange.rounded-xxl(:class="{ open: item.isOpen }")
+			.artists-item(@click="toggleOpen(item)").cursor-pointer
+				.inner.bg-gradient-to-b.from-purple.to-transparent.text-orange.rounded-xxl(:class="{ open: item.isOpen }" v-auto-animate)
 					header.relative
 						.shadow
-						h2.text-l.artists-title.absolute.bottom-6.left-6 {{ item.data.artist_name[0].text }}
-						img.featured.rounded-xxl.lg_w-full.mt-8(:src="item.data.featured_image.url" :class="{ open: item.isOpen }")
+						h2.text-l.artists-title.absolute.bottom-4.left-4 {{ item.data.artist_name[0].text }}
+						img.featured.rounded-xxl.lg_w-full(:src="item.data.featured_image.url" :class="{ open: item.isOpen }")
 						//- img.rounded-lg.lg_w-full.mt-8(:src="item.data.featured_image.url")
-					.opener(v-if="item.isOpen").p-4
-						PrismicRichText.content.px-2(:field="item.data.description").pt-1
-						ul.links.p-4.mt-4
+					.opener(v-if="item.isOpen" v-auto-animate).p-4
+						PrismicRichText.content(:field="item.data.description")
+						ul.links.mt-4
 							li(v-for="link in item.data.links").pb-2
 								a(:href="link.url.url" target="{{ link.url.target }}") {{ link.link_label }}
-.background.bg-gradient-to-t.from-white.to-purple
+.background.bg-gradient-to-t.from-transparent.to-purple
 					
 </template>
 
 <script setup>
 const { client } = usePrismic()
+import autoAnimate from "@formkit/auto-animate"
 
 const artistsData = ref([]);
 

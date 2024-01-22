@@ -5815,6 +5815,11 @@ spdx-license-ids@^3.0.0:
   resolved "https://registry.npmjs.org/spdx-license-ids/-/spdx-license-ids-3.0.16.tgz"
   integrity sha512-eWN+LnM3GR6gPu35WxNgbGl8rmY1AEmoMDvL/QD6zYmPWgywxWqJWNdLGT+ke8dKNWrcYgYjPpG5gbTfghP8rw==
 
+splitting@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.npmjs.org/splitting/-/splitting-1.0.6.tgz"
+  integrity sha512-2hYicS/hTy1MgjTi4ST6B298uoLSx854VfTf0FeMmCeE6OiZjEixTOGPLqnNzSaM/y3jwoEYj5pmDzYFwRInPw==
+
 ssri@^10.0.0:
   version "10.0.5"
   resolved "https://registry.npmjs.org/ssri/-/ssri-10.0.5.tgz"

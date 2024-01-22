@@ -1,8 +1,9 @@
 <template lang="pug">
+  Menu
   #home
-    .logo-big.fixed.top-8.left-8.hidden.md_block.w-3x12
+    .logo-big.fixed.top-8.left-8.w-10x12.lg_w-3x12
       prismic-image(:field="homepageData.data.logo_main")
-    .logo-small.fixed.bottom-8.right-8.hidden.md_block.w-1x12
+    .logo-small.fixed.lg_bottom-8.top-4.left-4.lg_right-8.w-1x4.lg_w-1x12
       prismic-image(:field="homepageData.data.logo_small")
     
     .information.fixed.bottom-8.left-8.text-white.text-xl

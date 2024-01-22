@@ -1,17 +1,18 @@
 <template lang="pug">
-  #transport.w-full.flex.flex-wrap
-    header.w-full.flex.justify-end.p-16.lg_p-20
+  HeaderLogoBG
+  #transport.w-full.flex.flex-wrap.mb-32
+    header.w-full.flex.justify-end.p-24.mb-24.lg_mb-0
       img.w-full.lg_w-2x5(src="~/assets/images/transport.svg" alt="transport")
 
     MasonryWall(:items='infoData' :ssr-columns='1' :gap='16').w-full.p-4
       template(#default='{ item, index }')
         .info-item( @click="toggleOpen(item)")
-          .inner.p-2.bg-gradient-to-t.from-orange.to-pink.rounded-xxl.p-4.hover_pb-6.cursor-pointer.transition-all
+          .inner.p-2.bg-gradient-to-t.from-transparent.to-pink.rounded-xxl.p-4.hover_pb-6.cursor-pointer.transition-all
             h2.text-purple {{ item.title }}
             header(v-auto-animate).text-purple
               PrismicRichText.content(:field="item.entry_content" v-if="item.isOpen").pt-2    
     //- PrismicImage.w-full(:field="accomData.map").m-4.rounded-xxl
-    .background.bg-gradient-to-t.from-orange.to-pink
+    .background.bg-gradient-to-t.from-transparent.to-pink
 </template>
 
 <script setup>

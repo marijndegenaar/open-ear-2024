@@ -26,6 +26,7 @@
     "@yeger/vue-masonry-wall": "^5.0.4",
     "lodash-es": "^4.17.21",
     "sass": "^1.63.6",
+    "splitting": "^1.0.6",
     "vite-plugin-pug": "^0.3.2",
     "vue-howler": "^0.7.0",
     "vue-scrollto": "^2.20.0",

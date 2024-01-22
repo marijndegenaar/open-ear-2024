@@ -1,6 +1,7 @@
 <template lang="pug">
-  #accomodation.w-full.flex.flex-wrap.bg-gradient-to-t.from-white.to-green.p-4
-    .w-full.flex.justify-end.p-12.lg_p-20
+  HeaderLogoBG
+  #accomodation.w-full.flex.flex-wrap.bg-gradient-to-t.from-transparent.to-green.p-4.mb-32
+    .w-full.flex.justify-end.p-20.mb-24.lg_mb-0
       img.w-full.md_w-1x3.lg_w-2x5(src="~/assets/images/accom.svg" alt="Accomodation")
 
     MasonryWall(:items='infoData' :ssr-columns='1' :gap='16').w-full
