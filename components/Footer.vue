@@ -1,8 +1,33 @@
 <template lang="pug">
-    #Footer.mt-auto.p-4.lg_p-8.pt-16.bg-gradient-to-t.from-purple.to-transparent
+    #Footer.mt-auto.p-4.lg_p-8.pt-16.bg-gradient-to-t.from-purple.to-transparent.flex.text-white.text-xs.items-end.flex-wrap
         img.hidden.md_block.w-7x12.information(src="~/assets/images/footer_desktop.svg" alt="Open Ear 2024, 31st May to 2nd June, Sherking Island, Cork")
         img.md_hidden.w-8x12.information(src="~/assets/images/footer_mobile.svg" alt="Open Ear 2024, 31st May to 2nd June, Sherking Island, Cork")
-
+        .spacer.w-2x12.hidden.md_block
+        .w-full.lg_w-2x12.flex.text-pink.py-4
+            ul.information.w-2x3.lg_px-4
+                li.uppercase.text-purple Contact
+                li
+                    span.uppercase.text-2xs General: 
+                    a.hover_text-green(href="mailto:kenny@openear.ie") kenny@openear.ie
+                li 
+                    span.uppercase.text-2xs Press: 
+                    a.hover_text-green(href="mailto:kenny@openear.ie") kenny@openear.ie
+                li
+                    span.uppercase.text-2xs Booking:
+                    a.hover_text-green(href="mailto:artist@openear.ie") artist@openear.ie    
+                    
+            ul.follow.w-1x3.px-4
+                li.uppercase.text-purple Follow
+                li 
+                    nuxt-link.hover_text-green(to="http://instagram.com/openearfestival") Instagram
+                    br
+                    nuxt-link.hover_text-green(to="http://facebook.com/openearfestival") Facebook
+                    br 
+                    nuxt-link.hover_text-green(to="http://x.com/openearfestival") X 
+        img.w-1x3.lg_w-1x12(src="~/assets/images/arts-council-logo-pink.svg" alt="The Arts Council Funding Festivals")
+        //- .faq.w-1x12
+        //-     h3 
+        //-         nuxt-link(to="/faq") FAQ
         
     prismic-image(:field="homepageData.data.bg_desktop").background.hidden.md_block
     prismic-image(:field="homepageData.data.bg_mobile").background.block.md_hidden
@@ -37,5 +62,9 @@ const { data: homepageData } = await useAsyncData("homepage", () =>
     top: 0
     left: 0
 
+li 
+    /* margin-bottom: .5rem */
+    &:last-child
+        margin-bottom: 0
 
 </style>
