@@ -1,8 +1,8 @@
 <template lang="pug">
   #accessibility.w-full.flex.flex-wrap.mb-32.p-2.lg_p-8
     header.w-full.flex.justify-end.p-24.mb-24.lg_mb-0
-      img.w-full.lg_w-2x5(src="~/assets/images/accessibility.svg" alt="accessibility")
-
+      //- img.w-full.lg_w-2x5(src="~/assets/images/accessibility.svg" alt="accessibility")
+      h1 Accessibilty
 
     MasonryWall(:items='infoData' :ssr-columns='1' :gap='16').w-full
       template(#default='{ item, index }')
