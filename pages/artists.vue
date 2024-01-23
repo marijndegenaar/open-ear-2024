@@ -59,7 +59,9 @@ const toggleOpen = (artistItem) => {
 	top: 0
 .inner:hover .featured
 	aspect-ratio: 16/8
-.inner.open .shadow
+.inner:hover .featured.open
+	aspect-ratio: 90/85
+.inner.open .shadow	
 	opacity: .2
 	// background: linear-gradient(to top, #6463F4 0%, transparent 40%)
 .featured
@@ -70,12 +72,17 @@ const toggleOpen = (artistItem) => {
 	&.open
 		aspect-ratio: 1/1
 		&:hover
-			aspect-ratio: 90/85
-			
+			aspect-ratio: 90/85		
 	&:hover
 		aspect-ratio: 16/8
 
 .content p
 	padding-bottom: 0.5rem
+
+.links a
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+		
 
 </style>
