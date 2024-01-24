@@ -38,8 +38,6 @@ const toggleOpen = (artistItem) => {
 </script>
 
 <style lang="sass">
-.rounded-xxl
-	border-radius: 3rem
 .shadow
 	background: linear-gradient(to bottom, #6463F4 0%, transparent 40%)
 	width: 100%
@@ -47,7 +45,7 @@ const toggleOpen = (artistItem) => {
 	position: absolute
 	left: 0
 	top: 0
-	border-radius: 3rem
+	border-radius: 2rem
 	opacity: .7
 	transition: all 0.4s
 
