@@ -6,7 +6,7 @@
     MasonryWall(:items='infoData' :ssr-columns='1' :gap='16').w-full
       template(#default='{ item, index }')
         .info-item( @click="toggleOpen(item)")
-          .inner.p-2.bg-gradient-to-t.from-transparent.to-pink.rounded-xxl.p-4.hover_pb-6.cursor-pointer.transition-all
+          .inner.p-2.bg-gradient-to-t.from-transparent.to-pink.rounded-xxl.p-4.hover_pb-8.cursor-pointer.transition-all
             h2.text-purple {{ item.title }}
             header(v-auto-animate).text-purple
               PrismicRichText.content(:field="item.entry_content" v-if="item.isOpen").pt-2    

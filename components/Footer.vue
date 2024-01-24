@@ -13,7 +13,7 @@
                     span Press inquiries: 
                     a.text-white.hover_text-green(href="mailto:kenny@openear.ie") kenny@openear.ie
                 li
-                    span Booking inquiries:
+                    span Booking inquiries: 
                     a.text-white.hover_text-green(href="mailto:artist@openear.ie") artist@openear.ie    
                     
             ul.follow.w-1x3.px-4
