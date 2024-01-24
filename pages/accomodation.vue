@@ -1,7 +1,7 @@
 <template lang="pug">
   #accomodation.w-full.flex.flex-wrap.bg-gradient-to-t.from-transparent.to-green.p-2.lg_p-8.mb-32
     .w-full.flex.justify-end.p-20.mb-24.lg_mb-0
-      img.w-full.md_w-1x3.lg_w-2x5(src="~/assets/images/accom.svg" alt="Accomodation")
+      img.w-full.md_w-1x3.lg_w-2x5(src="~/assets/images/accom.svg" alt="Accommodation")
 
     MasonryWall(:items='infoData' :ssr-columns='1' :gap='16').w-full
       template(#default='{ item, index }')
