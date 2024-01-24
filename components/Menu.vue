@@ -15,8 +15,8 @@ const menu = [
     {name: "line-up", slug: "artists"},
     {name: "transport", slug: "transport"},
     {name: "accommodation", slug: "accomodation"},
-    {name: "FAQ", slug: "faq"},
-    {name: "Accessibility", slug: "accessibility"},
+    {name: "faq", slug: "faq"},
+    {name: "accessibility", slug: "accessibility"},
     // {name: "Tickets", slug: "tickets"},
 ]
  
