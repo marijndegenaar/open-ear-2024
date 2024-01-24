@@ -29,6 +29,6 @@ if (typeof window !== 'undefined') {
 
 <style lang="sass" scoped>
 .logo-big  
-    z-index: -1
+    z-index: -9
 
 </style>

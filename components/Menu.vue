@@ -50,32 +50,32 @@ watchEffect(() => {
 .menu 
     .menu-item
         display: block
-        &:first-child
+        &:nth-child(5n + 1)
             background: linear-gradient(to top, #FE8D66 0%, #fff 100%)
             color: #0AFF88
-        &:nth-child(2)
+        &:nth-child(5n + 2)
             background: linear-gradient(to top, #EBF188 0%, #fff 100%)
             color: #6463F4
-        &:nth-child(3)
+        &:nth-child(5n + 3)
             background: linear-gradient(to top, #6463F4 0%, #fff 100%)
             color: #FED7FF
-        &:nth-child(4)
+        &:nth-child(5n + 4)
             background: linear-gradient(to top, #FED7FF 0%, #fff 100%)
             color: #FE8D66
-        &:nth-child(5)
+        &:nth-child(5n + 5)
             background: linear-gradient(to top, #0AFF88 0%, #fff 100%)
             color: #6463F4
-        &:nth-child(6)
-            background: linear-gradient(to top, #FE8D66 0%, #fff 100%)
-            color: #0AFF88
-        &:nth-child(7)
-            background: linear-gradient(to top, #EBF188 0%, #fff 100%)
-            color: #6463F4
-        &:nth-child(7)
-            background: linear-gradient(to top, #6463F4 0%, #fff 100%)
-            color: #FED7FF
-        &:nth-child(8)
-            background: linear-gradient(to top, #FED7FF 0%, #fff 100%)
-            color: #FE8D66
+        // &:nth-child(6)
+        //     background: linear-gradient(to top, #FE8D66 0%, #fff 100%)
+        //     color: #0AFF88
+        // &:nth-child(7)
+        //     background: linear-gradient(to top, #EBF188 0%, #fff 100%)
+        //     color: #6463F4
+        // &:nth-child(7)
+        //     background: linear-gradient(to top, #6463F4 0%, #fff 100%)
+        //     color: #FED7FF
+        // &:nth-child(8)
+        //     background: linear-gradient(to top, #FED7FF 0%, #fff 100%)
+        //     color: #FE8D66
 
 </style>

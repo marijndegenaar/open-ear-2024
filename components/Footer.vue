@@ -5,26 +5,26 @@
         .spacer.w-1x12.hidden.md_block
         .w-full.lg_w-3x12.flex.text-pink.py-4.lg_py-0
             ul.information.w-2x3.lg_px-4
-                li.uppercase.text-purple Contact
+                li.text-white.pb-2 Contact
                 li
-                    span.uppercase.text-2xs General: 
-                    a.hover_text-green(href="mailto:kenny@openear.ie") kenny@openear.ie
+                    span General inquiries: 
+                    a.text-white.hover_text-green(href="mailto:kenny@openear.ie") kenny@openear.ie
                 li 
-                    span.uppercase.text-2xs Press: 
-                    a.hover_text-green(href="mailto:kenny@openear.ie") kenny@openear.ie
+                    span Press inquiries: 
+                    a.text-white.hover_text-green(href="mailto:kenny@openear.ie") kenny@openear.ie
                 li
-                    span.uppercase.text-2xs Booking:
-                    a.hover_text-green(href="mailto:artist@openear.ie") artist@openear.ie    
+                    span Booking inquiries:
+                    a.text-white.hover_text-green(href="mailto:artist@openear.ie") artist@openear.ie    
                     
             ul.follow.w-1x3.px-4
-                li.uppercase.text-purple Follow
+                li.text-white.pb-2 Follow
                 li 
                     nuxt-link.hover_text-green(to="http://instagram.com/openearfestival") Instagram
                     br
                     nuxt-link.hover_text-green(to="http://facebook.com/openearfestival") Facebook
                     br 
                     nuxt-link.hover_text-green(to="http://x.com/openearfestival") X 
-        img.w-1x3.lg_w-1x12(src="~/assets/images/arts-council-logo-pink.svg" alt="The Arts Council Funding Festivals")
+        img.w-1x3.lg_w-1x12(src="~/assets/images/arts-council-logo.svg" alt="The Arts Council Funding Festivals")
         //- .faq.w-1x12
         //-     h3 
         //-         nuxt-link(to="/faq") FAQ
