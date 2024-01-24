@@ -55,7 +55,10 @@ img.featured
 .content p
   padding-bottom: 0.5rem
 
-
+a 
+  text-decoration: underline
+  &:hover
+    text-decoration: none
 
 .collapse-enter-active 
   animation: collapse reverse 500ms ease

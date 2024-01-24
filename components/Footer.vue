@@ -19,11 +19,11 @@
             ul.follow.w-1x3.px-4
                 li.text-white.pb-2 Follow
                 li 
-                    nuxt-link.hover_text-green(to="http://instagram.com/openearfestival") Instagram
+                    nuxt-link.hover_text-green(to="https://www.instagram.com/openearfest/") Instagram
                     br
-                    nuxt-link.hover_text-green(to="http://facebook.com/openearfestival") Facebook
+                    nuxt-link.hover_text-green(to="https://www.facebook.com/openearsherkin") Facebook
                     br 
-                    nuxt-link.hover_text-green(to="http://x.com/openearfestival") X 
+                    nuxt-link.hover_text-green(to="https://twitter.com/openearIE") X 
         img.w-1x3.lg_w-1x12(src="~/assets/images/arts-council-logo.svg" alt="The Arts Council Funding Festivals")
         //- .faq.w-1x12
         //-     h3 
