@@ -11,7 +11,7 @@
             //- Transition(name="collapse")
             img.rounded-xxl.w-full.featured(:src="item.data.featured_image.url" :class="{ open: item.isOpen }")
             //- img.rounded-lg.w-full.aspect-3x4(:src="item.data.featured_image.url" v-if="item.isOpen").mb-4   
-          PrismicRichText.content.p-4.text-purple(:field="item.data.content" v-if="item.isOpen")
+          PrismicRichText.content.p-4.text-purple(:field="item.data.content" v-show="item.isOpen")
 
 </template>
 

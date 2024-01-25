@@ -12,7 +12,7 @@
 						h2.text-l.artists-title.absolute.bottom-4.left-4 {{ item.data.artist_name[0].text }}
 						img.featured.rounded-xxl.lg_w-full(:src="item.data.featured_image.url" :class="{ open: item.isOpen }")
 						//- img.rounded-lg.lg_w-full.mt-8(:src="item.data.featured_image.url")
-					.opener(v-if="item.isOpen" v-auto-animate).p-4
+					.opener(v-show="item.isOpen" v-auto-animate).p-4
 						PrismicRichText.content(:field="item.data.description")
 						ul.links.mt-4
 							li(v-for="link in item.data.links").pb-2

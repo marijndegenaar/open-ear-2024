@@ -24,7 +24,20 @@
                     nuxt-link.hover_text-green(to="https://www.facebook.com/openearsherkin") Facebook
                     br 
                     nuxt-link.hover_text-green(to="https://twitter.com/openearIE") X 
-        img.w-1x3.lg_w-1x12(src="~/assets/images/arts-council-logo.svg" alt="The Arts Council Funding Festivals")
+        .w-1x3.lg_w-1x12
+            img(src="~/assets/images/arts-council-logo.svg" alt="The Arts Council Funding Festivals")
+            .text-pink.pt-2.credits
+                | Design: 
+                a.text-white.hover_text-green(href='https://irenemansoldo.net/' target="_blank") Irene Mansoldo
+                br 
+                | Dev: 
+                a.text-white.hover_text-green(href="http://marijndegenaar.net/" target="_blank") Marijn Degenaar
+        //- .spacer.w-8x12
+        //- .w-3x12.text-2xs.text-purple.pt-2.px-4 
+        //-     | Webdesign: Irene Mansoldo
+        //-     br 
+        //-     | Webdev: by Marijn Degenaar
+
         //- .faq.w-1x12
         //-     h3 
         //-         nuxt-link(to="/faq") FAQ
@@ -46,6 +59,8 @@ const { data: homepageData } = await useAsyncData("homepage", () =>
 </script>
 
 <style lang="sass" scoped>
+.credits
+    font-size: 10px
 .gradient   
     position: fixed
     bottom: 0
