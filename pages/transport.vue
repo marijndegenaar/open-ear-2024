@@ -9,7 +9,7 @@
           .inner.p-2.bg-gradient-to-t.from-transparent.to-pink.rounded-xxl.p-4.hover_pb-8.cursor-pointer.transition-all
             h2.text-purple {{ item.title }}
             header(v-auto-animate).text-purple
-              PrismicRichText.content(:field="item.entry_content" v-if="item.isOpen").pt-2    
+              PrismicRichText.content(:field="item.entry_content" v-show="item.isOpen").pt-2    
     //- PrismicImage.w-full(:field="accomData.map").m-4.rounded-xxl
     .background.bg-gradient-to-t.from-transparent.to-pink
 </template>
