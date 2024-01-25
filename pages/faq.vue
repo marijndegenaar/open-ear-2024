@@ -8,7 +8,7 @@
         .inner.p-2.bg-gradient-to-t.from-transparent.to-orange.text-purple.rounded-xxl.hover_pb-6.cursor-pointer.transition-all(@click="toggleOpen(item)")
           header(v-auto-animate)
             h2.p-2.news-title {{ item.question }}
-            PrismicRichText.content.text-l.p-2.news-title(:field="item.answer_rich" v-if="item.isOpen")
+            PrismicRichText.content.text-l.p-2.news-title(:field="item.answer_rich" v-show="item.isOpen")
 .background.bg-gradient-to-t.from-transparent.to-orange
 
 </template>

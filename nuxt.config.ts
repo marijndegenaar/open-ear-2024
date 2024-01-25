@@ -8,6 +8,10 @@ export default defineNuxtConfig({
         charset: 'utf-8',
         viewport: 'width=device-width, minimal-ui initial-scale=1, user-scalable=no',
         link: [{ rel: 'icon', type: 'image/png', href: '/fav.png' }],
+        meta: [
+          { hid: 'description', name: 'description', content: 'Open Ear 2024 is a music festival taking place 31st of May until 2nd of June, Sherkin Island, Cork, Ireland' },
+          { hid: 'keywords', name: 'keywords', content: 'music, festival, open ear, 2024, electronic, experimental, camping' }
+        ],
       },
   },
   modules: [
