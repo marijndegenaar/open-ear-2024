@@ -1,7 +1,7 @@
 <template lang="pug">
 #faq-wrap.w-full.p-4.mb-32
-  .w-full.flex.justify-center.lg_justify-end.px-24.py-20.mb-28.lg_mb-0
-      img.w-4x5.lg_w-3x12(src="~/assets/images/faq-title.svg" alt="FAQ")
+  .w-full.flex.justify-center.lg_justify-end.px-24.py-20.mb-28.lg_mb-12
+      img.w-4x5.lg_w-2x12(src="~/assets/images/faq-title.svg" alt="FAQ")
   MasonryWall(:items='faqData' :ssr-columns='1' :gap='16')
     template(#default='{ item, index }')
       .faq-item

@@ -1,6 +1,6 @@
 <template lang="pug">
   #accomodation.w-full.flex.flex-wrap.bg-gradient-to-t.from-transparent.to-green.p-2.lg_p-8.mb-32
-    .w-full.flex.justify-end.p-20.mb-24.lg_mb-0
+    .w-full.flex.justify-end.p-20.lg_px-4.mb-24.lg_mb-0
       img.w-full.md_w-1x3.lg_w-2x5(src="~/assets/images/accom.svg" alt="Accommodation")
 
     MasonryWall(:items='infoData' :ssr-columns='1' :gap='16').w-full
@@ -10,7 +10,8 @@
             h2.text-purple {{ item.title }}
             header(v-auto-animate).text-purple
               PrismicRichText.content(:field="item.entry_content" v-if="item.isOpen").pt-2    
-    PrismicImage.w-full(:field="accomData.map").rounded-xxl.mt-8
+    
+    PrismicImage.w-full.rounded-xxl.mt-8(v-if="accomData.map" :field="accomData.map")
       
 </template>
 
