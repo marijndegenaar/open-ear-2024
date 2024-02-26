@@ -1,9 +1,9 @@
 <template lang="pug">
-    #Footer.mt-auto.p-4.lg_p-8.pt-16.bg-gradient-to-t.from-purple.to-transparent.flex.text-white.text-2xs.items-end.flex-wrap
+    #Footer.mt-auto.p-4.lg_p-8.pt-16.bg-gradient-to-t.from-purple.to-transparent.flex.text-white.text-2xs.items-end.flex-wrap       
         img.hidden.md_block.w-7x12.information(src="~/assets/images/footer_desktop.svg" alt="Open Ear 2024, 31st May to 2nd June, Sherking Island, Cork")
         img.md_hidden.w-8x12.information(src="~/assets/images/footer_mobile.svg" alt="Open Ear 2024, 31st May to 2nd June, Sherking Island, Cork")
         .spacer.w-1x12.hidden.md_block
-        .w-full.lg_w-3x12.flex.text-pink.py-4.lg_py-0
+        .w-full.lg_w-3x12.flex.text-pink.py-4.lg_py-0.flex-wrap
             ul.information.w-2x3.lg_px-4
                 li.text-white.pb-2 Contact
                 li
@@ -15,7 +15,9 @@
                 li
                     span Booking inquiries: 
                     a.text-white.hover_text-green(href="mailto:artist@openear.ie") artist@openear.ie    
-                    
+                li.mt-4 
+                    a.button.px-2.py-1.bg-pink.text-orange.rounded-lg.hover_bg-yellow(href="http://eepurl.com/djzKvX" target="_blank") sign up to our newsletter
+
             ul.follow.w-1x3.px-4
                 li.text-white.pb-2 Follow
                 li 
